@@ -7,7 +7,7 @@ fetch(`http://localhost:3000/comidas`)
     })
     .then((data) =>{console.log(data)
 
-        data.pratosFavoritos.forEach(prato => {
+        data.forEach(prato => {
             console.log(prato)
 
             const mediaItem = document.createElement('div');
